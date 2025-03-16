@@ -13,9 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ue81",
+            "outputPath": "dist/projext-x",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "browser": "",
             "polyfills": [
               "zone.js"
             ],
