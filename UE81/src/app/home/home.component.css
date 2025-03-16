@@ -1,0 +1,20 @@
+.labelcolor{
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff4d4d, #ff8c1a, #ffe600, #33cc33, #3399ff, #9933ff, #ff33cc);
+  background-size: 1400% 1400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 6s ease infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

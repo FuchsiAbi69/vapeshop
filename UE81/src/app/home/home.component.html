@@ -1,0 +1,45 @@
+<div class="d-flex align-items-center flex-column mt-4">
+  <div class="w-75 text-center">
+    <h1 class="me-3">Willkommen zu</h1> <h1 class="labelcolor">Cloud Nine</h1>
+    <hr class="my-3">
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <h2 class="mb-3">Beliebteste Sorten</h2>
+
+        <div class="d-flex justify-content-center">
+          <ul class="nav nav-tabs flex-nowrap" style="font-size: 15px">
+            <li class="nav-item">
+              <a class="nav-link user-select-none text-black" [ngClass]="isActive(tastes.WATERMELON)" (click)="setTaste(tastes.WATERMELON)" aria-current="page">Watermelon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link user-select-none text-black" [ngClass]="isActive(tastes.BLUEBERRY)" (click)="setTaste(tastes.BLUEBERRY)">Blueberry</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link user-select-none text-black" [ngClass]="isActive(tastes.CHERRY)" (click)="setTaste(tastes.CHERRY)">Cherry</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link user-select-none text-black" [ngClass]="isActive(tastes.GRAPE)" (click)="setTaste(tastes.GRAPE)">Grape</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+            <img [src]="getImg()" alt="Image not found ):" class="img-fluid">
+        </div>
+      </div>
+
+      <hr class="d-block d-md-none">
+
+
+      <div class="col-md-6 col-sm-12">
+        <h2>NICHT MEHR LANGE</h2>
+        <h2>2 + 1 Aktion</h2>
+        <img src="/img/vapes.jpg" alt="Image not found ):" class="img-fluid">
+      </div>
+    </div>
+
+    <button class="btn btn-primary fs-3" routerLink="/shop">ZUM WEBSHOP</button>
+
+  </div>
+</div>
